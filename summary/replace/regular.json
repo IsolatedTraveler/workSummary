@@ -1,0 +1,37 @@
+{
+    "a":{
+        "reg":"(layui-block)",
+        "global":"g",
+        "val":"$1 myGrid",
+        "annotate":"",
+        "use":true
+    },
+    "b":{
+        "reg":"(layui-inline)",
+        "global":"g",
+        "val":"$1 my-col3 my-col",
+        "annotate":"",
+        "use":true
+    },
+    "c":{
+        "reg":"(layui-input-inline)",
+        "global":"g",
+        "val":"$1 my-col-auto my-col",
+        "annotate":"",
+        "use":true
+    },
+    "d":{
+        "reg":"style[ ='\"]+[ :;widthpxfloale0-9]+['\"]",
+        "global":"g",
+        "val":"",
+        "annotate":"",
+        "use":true
+    },
+    "e":{
+        "reg":"[\\s]{4,4}<div [^>]*>[\\s]*<i[^a-zA-Z]((?!&#xe61a;).)+&#xe61a;[\\s]*</i>[\\s]*</div>[\\s]*(</div>)(((?!<button)[\\s\\S])+)(((?!</div)[\\s\\S])+)",
+        "global":"g",
+        "val":"$2\n        \t\t<div class=\"myGrid my-bottom\">\n                \t<div class=\"layui-inline my-col3 my-col\">\n\t\t\t\t\t\t<span class=\"my-icon\">\n\t\t\t\t\t\t\t<span style=\"margin-right:5px;display: inline-block;text-align: center ;width: 14px;height: 14px;border: 1px solid #1E9FFF;border-radius: 50%\">\n\t\t\t\t\t\t\t\t<i class=\"layui-icon show_condition_more \" style=\"font-size: 10px; color: #1E9FFF;cursor: pointer;position: relative;\">&#xe61a;\n\t\t\t\t\t\t\t\t</i>\n\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t<span style=\"cursor: pointer;\" id=\"trigger-more\" onclick=\"$('.layui-icon.show_condition_more').trigger('click')\" >更多选项</span>\t\n\t\t\t\t\t\t</span>\t\n\t\t\t\t\t</div>\n\t                <div class=\"my-col-auto my-col my-button\" style=\"text-align: center;\">\n\t                    $5\n\t                </div>\n                </div>\n                $3",
+        "annotate":"",
+        "use":true
+    }
+}

@@ -6,6 +6,7 @@
   "scripts": {
     "lint:js": "eslint *js",
     "lint:css": "stylelint *.less,*.css,*.scss",
+    "self" : "node summary/code/index.js",
     "self:replace": "node selfLib/replace/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

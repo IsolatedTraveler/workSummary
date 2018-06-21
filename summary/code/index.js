@@ -11,13 +11,12 @@
     input: process.stdin,
     output: process.stdout
   });
-  // r1.question('Please enter the command name of what you want to executed?',(cin)=>{
-    var cin='replace-getC';
+  r1.question('Please enter the command name of what you want to executed?',(cin)=>{
     let exe = cin.split('-');
     let rootDir = '';
     rootDir = `${__dirname}\\execute\\${exe[0]}\\index.js`;
     let file = require(rootDir);
     file[exe[1]||'init']();
     r1.close();
-  // })
+  })
 })()

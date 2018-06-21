@@ -142,6 +142,7 @@
   }
   ,inst = function () {
     var original = `summary/code/config/content/original.text`, complete = 'summary/code/config/content/complete.text';
+    var folder='';
     return {
       // 简写
       init:function(){
@@ -178,6 +179,9 @@
         });
       },
       files:function(){
+        isFile(folder,new Promise((resolve,reject)=>{
+
+        }))
       },
       description:{
         des:'获取描述信息',

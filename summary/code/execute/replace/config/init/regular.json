@@ -1,6 +1,6 @@
 {
     "a":{
-        "reg":"(layui-block)",
+        "reg":"((layui-block)|(layui-form-item))",
         "global":"g",
         "val":"$1 myGrid",
         "annotate":"",

@@ -1,0 +1,6 @@
+<div class="layui-inline my-col">
+	<label class="layui-form-label">转诊机构科室</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="zcjgks" name="zcjgks" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>

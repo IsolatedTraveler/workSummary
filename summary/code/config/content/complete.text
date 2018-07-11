@@ -1,16 +1,1 @@
-
-			<div id="header">
-				<div class="layui-form" style="text-align: left;" id="searchForm">
-					<div class="layui-block myGrid">
-						<div class="layui-inline my-col3 my-col">
-							<label class="layui-form-label" >常用药组合名</label>
-							<div class="layui-input-inline my-col-auto my-col">
-								<input type="text" id="searchmc" name="ztmc" autocomplete="off" class="layui-input">
-							</div>
-						</div>
-						<div class="layui-inline my-col3 my-col">
-							<button class="layui-btn layui-btn-normal layui-btn-small" id="search_bt" lay-submit lay-filter="search_bt">查询</button>
-						</div>
-					</div>
-				</div>
-			</div>
+insert into e_xsejtfsjl(id,sfzh,sex,csrq,xm,bcsfysid,bcfsrq,zcjg,csqk,csqk_qt,csyz,mqrshbqk,xzzdm,xzzmph,fqxm,fqzy,fqdh,fqcsrq,mqxm,mqzy,mqdh,mqcsrq,zzbh,dm,jx,Apgarlx,zx,tlsc,jbsc,cstz,mqtz,cssc,wyfs,cnl,cncs,ot,db,dbcs,tw,xl,hxpl,ms,ms_qt,qxz,qxy,qx,qx_qt,hdbw,yj,szhdd,ewg,jbbk,bz,pf,kq,gm,xftz,xb,fbcz,jz,wszq,qd,qd_qt,xcsfrq,xcsfdd,zcjy,zcyy,zd,zd_qt,zcjgks,xgrid,xgrxm,cjrid,cjrxm) values ('','','1-男','2018-07-10','何波','743','2018-07-10','','','','','','510106024001','','','','','','邓小姐','','','','51010602400100003','51010602400100003','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','1-未见异常','','','','','','2018-07-10','','1-无','','','','','1091','何波','1091','何波')

@@ -12,7 +12,7 @@
   });
   var fs = fs = require('fs-extra')
   ,CLASS =function(){
-    this.regularUrl = `${__dirname}\\config\\regular.json`;
+    this.regularUrl = `summary/code/config/regular.json`;
   }
   // 向文件中写入内容
   ,writeFile = function (file,str){
@@ -140,6 +140,18 @@
       console.error(err);
     })
   }
+  ,getReg = function(data,val){
+    Object.keys(data).forEach(function (key) {console.log(key)
+      let item = data[key];
+      if(item.use){
+        if(!item.regs){
+          val.push(item);
+        }else{
+          getReg(item.regs,val);
+        }
+      }
+    })
+  }
   ,inst = function () {
     var original = `summary/code/config/content/original.text`, complete = 'summary/code/config/content/complete.text';
     var folder='';
@@ -162,12 +174,11 @@
         var that = this;
         Promise.all([readFile(original), readFile(that.regularUrl)]).then((data)=>{
           let allReg=JSON.parse(data[1]), str = data[0];
-          Object.keys(allReg).forEach(function (key) {
-            let regDes=allReg[key];
-            if(regDes.use){
-              let reg = new RegExp(regDes.reg,regDes.global);
-              str = str.replace(reg, regDes.val);
-            }
+          let regs = [];
+          getReg(allReg,regs);
+          regs.forEach(function (regDes) {console.log(regDes.reg)
+            let reg = new RegExp(regDes.reg,regDes.global);
+            str = str.replace(reg, regDes.val);
           });
           writeFile(complete,str).then(()=>{
             console.info('write in file successful');
@@ -206,7 +217,11 @@
         })
       },
       setConfig:function(){
-
+        isFile(`summary/code/execute/replace/config/init`,deleteFile).then(function(){
+          copyFiles(`summary/code/execute/replace/config/init`,`summary/code/config`).then(function(){
+            console.info('copy the file successfully');
+          })
+        })
       }
     }
   };

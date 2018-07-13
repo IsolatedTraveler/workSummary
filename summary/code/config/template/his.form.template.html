@@ -67,8 +67,8 @@ bigText
 </div>
 组合
 <div class="layui-inline my-col12 my-col">
-	<label class="layui-form-label" style="height: {{d.num*25+5}}px;line-height: {{d.num*25+3}}px;">{{d.title}}</label>
+	<label class="layui-form-label" style="height: {{d.num*30-5}}px;line-height: {{d.num*30-7}}px;">{{d.title}}</label>
 	<div class="layui-input-inline my-col-auto myGrid" >
-		{{!# d.form.global=Object.assign({},d.global,d.form.global);str += analyses(d.form,content) #!}}
+		{{!# d.form.global=Object.assign({},g,d.form.global);str += analyses(d.form,content); #!}}
 	</div>
 </div>

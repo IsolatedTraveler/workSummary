@@ -1,5 +1,33 @@
 {
-    "fileUrl":"summary/code/config",
-    "original":"summary/code/content/original.text",
-    "complete":"summary/code/content/complete.text"
+    "position":["wdxx", "his", "form"],
+    "global":{
+        "inputClass":"layui-input my-col-auto",
+        "selectClass":"",
+        "labelClass":"layui-form-label",
+        "class1":"layui-inline my-col4 my-col",
+        "class2":"layui-input-inline my-col-auto my-col",
+        "multiInputClass":"layui-input multiple_input_position",
+        "multiClass":"chosen-select width-size3 jzs_chosen",
+        "values":[
+            {"value":""},
+            {
+                "value":"1-未见异常",
+                "html":""
+            },
+            {
+                "value":"2-异常",
+                "html":""
+            }
+        ]
+    },
+    "module":{
+        "kyglbtz":{
+            "type":"select",
+            "name":"kyglbtz",
+            "title":"可以佝偻病体征",
+            "values":[
+                {"value":""}
+            ]
+        }
+    }
 }

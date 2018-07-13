@@ -1,7 +1,17 @@
 {
-    "name":"",
+    "name":"e_xsejtfsjl",
     "title":"",
     "col":[
+        {
+            "title": "id",
+            "name": "id",
+            "type": "VARCHAR(50)"
+        },
+        {
+            "title": "状态  1-正常   -1   注销",
+            "name": "zt",
+            "type": "VARCHAR(2)"
+        },
         {
             "title": "身份证号",
             "name": "sfzh",
@@ -9,13 +19,13 @@
         },
         {
             "title": "性别",
-            "name": "xb",
-            "type": "VARCHAR(32)"
+            "name": "sex",
+            "type": "VARCHAR(8)"
         },
         {
             "title": "出生日期",
             "name": "csrq",
-            "type": "VARCHAR(32)"
+            "type": "date"
         },
         {
             "title": "姓名",
@@ -30,7 +40,7 @@
         {
             "title": "本次访视日期",
             "name": "bcfsrq",
-            "type": "VARCHAR(32)"
+            "type": "date"
         },
         {
             "title": "助产机构",
@@ -43,11 +53,6 @@
             "type": "VARCHAR(32)"
         },
         {
-            "title": "出生情况-其他",
-            "name": "csqk_qt",
-            "type": "VARCHAR(32)"
-        },
-        {
             "title": "出生孕周",
             "name": "csyz",
             "type": "VARCHAR(32)"
@@ -55,7 +60,7 @@
         {
             "title": "母亲妊娠期患病",
             "name": "mqrshbqk",
-            "type": "VARCHAR(32)"
+            "type": "VARCHAR(128)"
         },
         {
             "title": "现住址区划",
@@ -65,7 +70,7 @@
         {
             "title": "现住址门牌",
             "name": "xzzmph",
-            "type": "VARCHAR(32)"
+            "type": "VARCHAR(128)"
         },
         {
             "title": "父亲",
@@ -75,7 +80,7 @@
         {
             "title": "父亲",
             "name": "fqzy",
-            "type": "VARCHAR(32)"
+            "type": "VARCHAR(64)"
         },
         {
             "title": "父亲",
@@ -95,7 +100,7 @@
         {
             "title": "母亲",
             "name": "mqzy",
-            "type": "VARCHAR(32)"
+            "type": "VARCHAR(64)"
         },
         {
             "title": "母亲",
@@ -208,11 +213,6 @@
             "type": "VARCHAR(32)"
         },
         {
-            "title": "面色-其他",
-            "name": "ms_qt",
-            "type": "VARCHAR(32)"
-        },
-        {
             "title": "前囟",
             "name": "qxz",
             "type": "VARCHAR(32)"
@@ -228,14 +228,9 @@
             "type": "VARCHAR(32)"
         },
         {
-            "title": "前囟-其他",
-            "name": "qx_qt",
-            "type": "VARCHAR(32)"
-        },
-        {
             "title": "黄疸部位",
             "name": "hdbw",
-            "type": "VARCHAR(32)"
+            "type": "VARCHAR(128)"
         },
         {
             "title": "眼睛",
@@ -283,7 +278,7 @@
             "type": "VARCHAR(32)"
         },
         {
-            "title": "性别",
+            "title": "胸部",
             "name": "xb",
             "type": "VARCHAR(32)"
         },
@@ -308,19 +303,14 @@
             "type": "VARCHAR(32)"
         },
         {
-            "title": "脐带-其他",
-            "name": "qd_qt",
-            "type": "VARCHAR(32)"
-        },
-        {
             "title": "下次随访日期",
             "name": "xcsfrq",
-            "type": "VARCHAR(32)"
+            "type": "date"
         },
         {
             "title": "下次随访地点",
             "name": "xcsfdd",
-            "type": "VARCHAR(32)"
+            "type": "VARCHAR(128)"
         },
         {
             "title": "转诊建议",
@@ -330,22 +320,47 @@
         {
             "title": "转诊原因",
             "name": "zcyy",
-            "type": "VARCHAR(32)"
+            "type": "VARCHAR(500)"
         },
         {
             "title": "指导",
             "name": "zd",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "指导-其他",
-            "name": "zd_qt",
-            "type": "VARCHAR(32)"
+            "type": "VARCHAR(128)"
         },
         {
             "title": "转诊机构科室",
             "name": "zcjgks",
-            "type": "VARCHAR(32)"
+            "type": "VARCHAR(128)"
+        },
+        {
+            "title": "修改人id",
+            "name": "xgrid",
+            "type": "VARCHAR(50)"
+        },
+        {
+            "title": "修改人姓名",
+            "name": "xgrxm",
+            "type": "VARCHAR(20)"
+        },
+        {
+            "title": "修改时间",
+            "name": "xgsj",
+            "type": "date"
+        },
+        {
+            "title": "创建人id",
+            "name": "cjrid",
+            "type": "VARCHAR(50)"
+        },
+        {
+            "title": "创建人姓名",
+            "name": "cjrxm",
+            "type": "VARCHAR(20)"
+        },
+        {
+            "title": "创建时间",
+            "name": "cjsj",
+            "type": "date"
         }
     ]
 }

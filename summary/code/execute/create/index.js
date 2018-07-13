@@ -141,7 +141,26 @@
       })
     }
     ,analyse = function (tpl){
-      return tpl.replace(/{{[ ]*([\.a-zA-Z0-9_$|&?:\(\)'="+]+)[ ]*}}/g,'`+($1)+`').replace(/([\s]+){{#([^}]+)}}([\s]+)([^{]+)>[{{#\s}]+}([\s]+)/g,'`;$1$2str+=`$3$4>`}str+=`$5');
+      if(tpl){
+        return tpl.replace(/{{[ ]*([\.\*\-\/a-zA-Z0-9_$|&?:\(\)'="+]+)[ ]*}}/g,'`+($1)+`').replace(/([\s]+){{#([^}]+)}}([\s]+)([^{]+)>[{{#\s}]+}([\s]+)/g,'`;$1$2str+=`$3$4>`}str+=`$5').replace(/([\s]+){{!#([^#]+)#!}}/,'`$1$2str+=`');
+      }
+    }
+    ,analyses = function(config,content){
+      var html='';
+      Object.keys(config.module).forEach(function (key) {
+        let val = config.module[key];
+        let template = content[val.type];
+        let str = analyse(template);
+        str = "let analyse ="+ analyse +";let content = "+ JSON.stringify(content) +";let analyses= "+ analyses +";let str = `" + str + "`;\nreturn str;"
+        let fun = new Function('d,g',str);
+        str = fun(val,config.global);
+        if(/^[0-9]+$/.test(key)){
+          str = str.replace(/id=[\S]+[\s]/,'');
+        }
+        html += str+'\n';
+      });
+      html = html.replace(/ [a-zA-Z0-9\-\_]+=['"]undefined['"]/g,'').replace(/ undefined/g,'');
+      return html;
     }
     ,inst = function () {
       var template = `summary/code/config/template.json`, complete = 'summary/code/config/content/complete.text', config='summary/code/config/config.json';
@@ -173,20 +192,7 @@
                 }
             })
             // 解析模板
-            var html='';
-            Object.keys(config.module).forEach(function (key) {
-              let val = config.module[key];
-              let template = content[val.type];
-              let str = analyse(template);
-              str = "let str = `" + str + "`;\nreturn str;"
-              let fun = new Function('d,g',str);
-              str = fun(val,config.global);
-              if(/^[0-9]+$/.test(key)){
-                str = str.replace(/id=[\S]+[\s]/,'');
-              }
-              html += str+'\n';
-            });
-            html = html.replace(/ [a-zA-Z0-9\-\_]+=['"]undefined['"]/g,'').replace(/ undefined/g,'');
+           let html = analyses(config,content);
             writeFile(complete,html).then(()=>{
               console.info('write in file successful');
             }).catch((data)=>{

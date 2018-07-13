@@ -187,7 +187,7 @@
         createTable:function(){
           readFile(dataFile).then((data)=>{
             data = JSON.parse(data);
-            var str=`create table ${data.name} (\n`;
+            var str=`drop table ${data.name};\ncreate table ${data.name} (\n`;
             var cols=data.col;
             for(let col of cols){
                 str += `\t${col.name} ${col.type} ,\n`;

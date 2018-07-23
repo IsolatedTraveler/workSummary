@@ -21,13 +21,67 @@
         ]
     },
     "module":{
-        "kyglbtz":{
+        "cjrq":{
+            "title":"产检日期",
+            "name":"cjrq",
+            "type":"date"
+        },
+        "yz":{
+            "title":"孕周",
+            "name":"yz",
+            "type":"unit",
+            "unit":"周"
+        },
+        "yfnl":{
+            "title":"孕妇年龄",
+            "name":"yfnl",
+            "type":"text"
+        },
+        "zfxm":{
+            "title":"丈夫姓名",
+            "name":"zfxm",
+            "type":"text"
+        },
+        "zfnl":{
+            "title":"丈夫年龄",
+            "name":"zfnl",
+            "type":"text"
+        },
+        "zfdh":{
+            "title":"丈夫电话",
+            "name":"zfdh",
+            "type":"text"
+        },
+        "yc":{
+            "title":"孕次",
+            "name":"yc",
+            "type":"text"
+        },
+        "ydfm":{
+            "title":"阴道分娩",
+            "name":"ydfm",
+            "type":"unit",
+            "unit":"次"
+        },
+        "pgc":{
+            "title":"剖宫产",
+            "name":"pgc",
+            "type":"unit",
+            "unit":"次"
+        },
+        "mcyj":{
+            "title":"末次月经",
+            "name":"mcyj",
             "type":"select",
-            "name":"kyglbtz",
-            "title":"可以佝偻病体征",
             "values":[
-                {"value":""}
+                {"value":""},
+                {"value":"不详"},
+                {"value":"其他"}
             ]
+        },
+        "mcyj_qt":{
+            "name":"mcyj_qt",
+            "type":"date"
         }
     }
 }

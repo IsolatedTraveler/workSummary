@@ -239,7 +239,6 @@
             }
             str += `err_custom EXCEPTION;\n\tv_err VARCHAR2(2000);\n\tv_fs Varchar2(1);\n\tv_count Integer:=0;\n\tv_json_return json:=json();\nBEGIN\n\tjson_data(data_in, '${data.title}', v_json_data);\n\t`;
             for(let item of data.col){
-              let name = item.name;
               let cols = item.col;
               for(let key in cols){
                 if(/(时间|日期)$/.test(cols[key])){

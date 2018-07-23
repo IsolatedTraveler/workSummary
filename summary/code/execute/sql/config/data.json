@@ -1,333 +1,139 @@
 {
-    "name":"e_xsejtfsjl",
-    "title":"",
-    "col":[
-        {
+    "name":"e_xsejksf_1_8",
+    "title":"1-8月儿童体检",
+    "col":[{
             "title": "id",
             "name": "id",
-            "type": "VARCHAR(50)"
-        },
-        {
-            "title": "状态  1-正常   -1   注销",
-            "name": "zt",
-            "type": "VARCHAR(2)"
-        },
-        {
-            "title": "身份证号",
-            "name": "sfzh",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "性别",
-            "name": "sex",
-            "type": "VARCHAR(8)"
-        },
-        {
-            "title": "出生日期",
-            "name": "csrq",
-            "type": "date"
-        },
-        {
+        },{
+            "title": "管理机构id",
+            "name": "gljgid",
+            "type": "VARCHAR(32)"
+        },{
+            "title": "新生儿id",
+            "name": "xseid",
+            "type": "VARCHAR(32)"
+        },{
             "title": "姓名",
             "name": "xm",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "责任医生",
-            "name": "bcsfysid",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "本次访视日期",
-            "name": "bcfsrq",
+        }, {
+            "title": "随访日期",
+            "name": "sfrq",
             "type": "date"
-        },
-        {
-            "title": "助产机构",
-            "name": "zcjg",
+        }, {
+            "title": "体重",
+            "name": "tz",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "出生情况",
-            "name": "csqk",
+        }, {
+            "title": "体重评价",
+            "name": "tzpj",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "出生孕周",
-            "name": "csyz",
+        }, {
+            "title": "身长",
+            "name": "sc",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "母亲妊娠期患病",
-            "name": "mqrshbqk",
-            "type": "VARCHAR(128)"
-        },
-        {
-            "title": "现住址区划",
-            "name": "xzzdm",
+        }, {
+            "title": "身长评价",
+            "name": "scpj",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "现住址门牌",
-            "name": "xzzmph",
-            "type": "VARCHAR(128)"
-        },
-        {
-            "title": "父亲",
-            "name": "fqxm",
+        }, {
+            "title": "随访结果",
+            "name": "sfjg",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "父亲",
-            "name": "fqzy",
-            "type": "VARCHAR(64)"
-        },
-        {
-            "title": "父亲",
-            "name": "fqdh",
+        }, {
+            "title": "失访原因",
+            "name": "sfyy",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "父亲",
-            "name": "fqcsrq",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "母亲",
-            "name": "mqxm",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "母亲",
-            "name": "mqzy",
-            "type": "VARCHAR(64)"
-        },
-        {
-            "title": "母亲",
-            "name": "mqdh",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "母亲",
-            "name": "mqcsrq",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "纸质编号",
-            "name": "zzbh",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "档案编号",
-            "name": "dm",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "畸形",
-            "name": "jx",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "Apgar评分",
-            "name": "Apgarlx",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "窒息",
-            "name": "zx",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "听力筛查",
-            "name": "tlsc",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "疾病筛查",
-            "name": "jbsc",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "出生体重",
-            "name": "cstz",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "目前体重",
-            "name": "mqtz",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "出生身长",
-            "name": "cssc",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "喂养方式",
-            "name": "wyfs",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "吃奶量",
-            "name": "cnl",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "吃奶次数",
-            "name": "cncs",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "呕吐",
-            "name": "ot",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "大便",
-            "name": "db",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "大便次数",
-            "name": "dbcs",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "体温",
+        }, {
+            "title": "死亡日期",
+            "name": "swrq",
+            "type": "date"
+        }, {
+            "title": "头围",
             "name": "tw",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "心率",
-            "name": "xl",
+        }, {
+            "title": "服用维生素D",
+            "name": "fywssd",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "呼吸频率",
-            "name": "hxpl",
+        }, {
+            "title": "户外活动",
+            "name": "hwhd",
             "type": "VARCHAR(32)"
-        },
-        {
+        }, {
             "title": "面色",
             "name": "ms",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "前囟",
-            "name": "qxz",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "前囟",
-            "name": "qxy",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "前囟",
-            "name": "qx",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "黄疸部位",
-            "name": "hdbw",
-            "type": "VARCHAR(128)"
-        },
-        {
-            "title": "眼睛",
-            "name": "yj",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "四肢活动",
-            "name": "szhdd",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "耳外观",
-            "name": "ewg",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "颈部包块",
-            "name": "jbbk",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "鼻",
-            "name": "bz",
-            "type": "VARCHAR(32)"
-        },
-        {
+        }, {
             "title": "皮肤",
             "name": "pf",
             "type": "VARCHAR(32)"
-        },
-        {
+        }, {
+            "title": "前囟",
+            "name": "qx",
+            "type": "VARCHAR(32)"
+        }, {
+            "title": "眼睛",
+            "name": "yj",
+            "type": "VARCHAR(32)"
+        }, {
+            "title": "耳外观",
+            "name": "ewg",
+            "type": "VARCHAR(32)"
+        }, {
             "title": "口腔",
             "name": "kq",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "肛门",
-            "name": "gm",
-            "type": "VARCHAR(32)"
-        },
-        {
-            "title": "心肺听诊",
-            "name": "xftz",
-            "type": "VARCHAR(32)"
-        },
-        {
+        }, {
             "title": "胸部",
             "name": "xb",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "腹部触诊",
-            "name": "fbcz",
+        }, {
+            "title": "腹部",
+            "name": "fb",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "脊柱",
-            "name": "jz",
+        }, {
+            "title": "脐部",
+            "name": "qb",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "外生殖器",
+        }, {
+            "title": "四肢",
+            "name": "sz",
+            "type": "VARCHAR(32)"
+        }, {
+            "title": "肛门/外生殖器",
             "name": "wszq",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "脐带",
-            "name": "qd",
+        }, {
+            "title": "颈部包块",
+            "name": "jbbk",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "下次随访日期",
-            "name": "xcsfrq",
-            "type": "date"
-        },
-        {
-            "title": "下次随访地点",
-            "name": "xcsfdd",
-            "type": "VARCHAR(128)"
-        },
-        {
-            "title": "转诊建议",
-            "name": "zcjy",
+        }, {
+            "title": "患病情况",
+            "name": "lcsfjhbqk",
             "type": "VARCHAR(32)"
-        },
-        {
-            "title": "转诊原因",
-            "name": "zcyy",
-            "type": "VARCHAR(500)"
-        },
-        {
+        }, {
             "title": "指导",
             "name": "zd",
             "type": "VARCHAR(128)"
-        },
-        {
+        }, {
+            "title": "下次随访日期",
+            "name": "xcsfrq",
+            "type": "date"
+        }, {
+            "title": "随访医生",
+            "name": "sfysid",
+            "type": "VARCHAR(32)"
+        }, {
+            "title": "转诊建议",
+            "name": "zcjy",
+            "type": "VARCHAR(128)"
+        }, {
+            "title": "转诊原因",
+            "name": "zcyy",
+            "type": "VARCHAR(500)"
+        }, {
             "title": "转诊机构科室",
             "name": "zcjgks",
             "type": "VARCHAR(128)"

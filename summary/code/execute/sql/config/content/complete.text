@@ -1,70 +1,38 @@
-drop table e_xsejtfsjl;
-create table e_xsejtfsjl (
-	id VARCHAR(50) ,
-	zt VARCHAR(2) ,
-	sfzh VARCHAR(32) ,
-	sex VARCHAR(32) ,
-	csrq date ,
+drop table e_xsejksf_1_8;
+create table e_xsejksf_1_8 (
+	id VARCHAR(32) ,
+	gljgid VARCHAR(32) ,
+	xseid VARCHAR(32) ,
 	xm VARCHAR(32) ,
-	bcsfysid VARCHAR(32) ,
-	bcfsrq date ,
-	zcjg VARCHAR(32) ,
-	csqk VARCHAR(32) ,
-	csyz VARCHAR(32) ,
-	mqrshbqk VARCHAR(128) ,
-	xzzdm VARCHAR(32) ,
-	xzzmph VARCHAR(128) ,
-	fqxm VARCHAR(32) ,
-	fqzy VARCHAR(32) ,
-	fqdh VARCHAR(32) ,
-	fqcsrq VARCHAR(32) ,
-	mqxm VARCHAR(32) ,
-	mqzy VARCHAR(32) ,
-	mqdh VARCHAR(32) ,
-	mqcsrq VARCHAR(32) ,
-	zzbh VARCHAR(32) ,
-	dm VARCHAR(32) ,
-	jx VARCHAR(32) ,
-	Apgarlx VARCHAR(32) ,
-	zx VARCHAR(32) ,
-	tlsc VARCHAR(32) ,
-	jbsc VARCHAR(32) ,
-	cstz VARCHAR(32) ,
-	mqtz VARCHAR(32) ,
-	cssc VARCHAR(32) ,
-	wyfs VARCHAR(32) ,
-	cnl VARCHAR(32) ,
-	cncs VARCHAR(32) ,
-	ot VARCHAR(32) ,
-	db VARCHAR(32) ,
-	dbcs VARCHAR(32) ,
+	sfrq date ,
+	tz VARCHAR(32) ,
+	tzpj VARCHAR(32) ,
+	sc VARCHAR(32) ,
+	scpj VARCHAR(32) ,
+	sfjg VARCHAR(32) ,
+	sfyy VARCHAR(32) ,
+	swrq date ,
 	tw VARCHAR(32) ,
-	xl VARCHAR(32) ,
-	hxpl VARCHAR(32) ,
+	fywssd VARCHAR(32) ,
+	hwhd VARCHAR(32) ,
 	ms VARCHAR(32) ,
-	qxz VARCHAR(32) ,
-	qxy VARCHAR(32) ,
-	qx VARCHAR(32) ,
-	hdbw VARCHAR(128) ,
-	yj VARCHAR(32) ,
-	szhdd VARCHAR(32) ,
-	ewg VARCHAR(32) ,
-	jbbk VARCHAR(32) ,
-	bz VARCHAR(32) ,
 	pf VARCHAR(32) ,
+	qx VARCHAR(32) ,
+	yj VARCHAR(32) ,
+	ewg VARCHAR(32) ,
 	kq VARCHAR(32) ,
-	gm VARCHAR(32) ,
-	xftz VARCHAR(32) ,
 	xb VARCHAR(32) ,
-	fbcz VARCHAR(32) ,
-	jz VARCHAR(32) ,
+	fb VARCHAR(32) ,
+	qb VARCHAR(32) ,
+	sz VARCHAR(32) ,
 	wszq VARCHAR(32) ,
-	qd VARCHAR(32) ,
-	xcsfrq date ,
-	xcsfdd VARCHAR(128) ,
-	zcjy VARCHAR(32) ,
-	zcyy VARCHAR(500) ,
+	jbbk VARCHAR(32) ,
+	lcsfjhbqk VARCHAR(32) ,
 	zd VARCHAR(128) ,
+	xcsfrq date ,
+	sfysid VARCHAR(32) ,
+	zcjy VARCHAR(128) ,
+	zcyy VARCHAR(500) ,
 	zcjgks VARCHAR(128) ,
 	xgrid VARCHAR(50) ,
 	xgrxm VARCHAR(20) ,
@@ -73,76 +41,44 @@ create table e_xsejtfsjl (
 	cjrxm VARCHAR(20) ,
 	cjsj date 
 );
-comment on table e_xsejtfsjl is '';
-comment on column e_xsejtfsjl.id is 'id';
-comment on column e_xsejtfsjl.zt is '状态  1-正常   -1   注销';
-comment on column e_xsejtfsjl.sfzh is '身份证号';
-comment on column e_xsejtfsjl.sex is '性别';
-comment on column e_xsejtfsjl.csrq is '出生日期';
-comment on column e_xsejtfsjl.xm is '姓名';
-comment on column e_xsejtfsjl.bcsfysid is '责任医生';
-comment on column e_xsejtfsjl.bcfsrq is '本次访视日期';
-comment on column e_xsejtfsjl.zcjg is '助产机构';
-comment on column e_xsejtfsjl.csqk is '出生情况';
-comment on column e_xsejtfsjl.csyz is '出生孕周';
-comment on column e_xsejtfsjl.mqrshbqk is '母亲妊娠期患病';
-comment on column e_xsejtfsjl.xzzdm is '现住址区划';
-comment on column e_xsejtfsjl.xzzmph is '现住址门牌';
-comment on column e_xsejtfsjl.fqxm is '父亲';
-comment on column e_xsejtfsjl.fqzy is '父亲';
-comment on column e_xsejtfsjl.fqdh is '父亲';
-comment on column e_xsejtfsjl.fqcsrq is '父亲';
-comment on column e_xsejtfsjl.mqxm is '母亲';
-comment on column e_xsejtfsjl.mqzy is '母亲';
-comment on column e_xsejtfsjl.mqdh is '母亲';
-comment on column e_xsejtfsjl.mqcsrq is '母亲';
-comment on column e_xsejtfsjl.zzbh is '纸质编号';
-comment on column e_xsejtfsjl.dm is '档案编号';
-comment on column e_xsejtfsjl.jx is '畸形';
-comment on column e_xsejtfsjl.Apgarlx is 'Apgar评分';
-comment on column e_xsejtfsjl.zx is '窒息';
-comment on column e_xsejtfsjl.tlsc is '听力筛查';
-comment on column e_xsejtfsjl.jbsc is '疾病筛查';
-comment on column e_xsejtfsjl.cstz is '出生体重';
-comment on column e_xsejtfsjl.mqtz is '目前体重';
-comment on column e_xsejtfsjl.cssc is '出生身长';
-comment on column e_xsejtfsjl.wyfs is '喂养方式';
-comment on column e_xsejtfsjl.cnl is '吃奶量';
-comment on column e_xsejtfsjl.cncs is '吃奶次数';
-comment on column e_xsejtfsjl.ot is '呕吐';
-comment on column e_xsejtfsjl.db is '大便';
-comment on column e_xsejtfsjl.dbcs is '大便次数';
-comment on column e_xsejtfsjl.tw is '体温';
-comment on column e_xsejtfsjl.xl is '心率';
-comment on column e_xsejtfsjl.hxpl is '呼吸频率';
-comment on column e_xsejtfsjl.ms is '面色';
-comment on column e_xsejtfsjl.qxz is '前囟';
-comment on column e_xsejtfsjl.qxy is '前囟';
-comment on column e_xsejtfsjl.qx is '前囟';
-comment on column e_xsejtfsjl.hdbw is '黄疸部位';
-comment on column e_xsejtfsjl.yj is '眼睛';
-comment on column e_xsejtfsjl.szhdd is '四肢活动';
-comment on column e_xsejtfsjl.ewg is '耳外观';
-comment on column e_xsejtfsjl.jbbk is '颈部包块';
-comment on column e_xsejtfsjl.bz is '鼻';
-comment on column e_xsejtfsjl.pf is '皮肤';
-comment on column e_xsejtfsjl.kq is '口腔';
-comment on column e_xsejtfsjl.gm is '肛门';
-comment on column e_xsejtfsjl.xftz is '心肺听诊';
-comment on column e_xsejtfsjl.xb is '胸部';
-comment on column e_xsejtfsjl.fbcz is '腹部触诊';
-comment on column e_xsejtfsjl.jz is '脊柱';
-comment on column e_xsejtfsjl.wszq is '外生殖器';
-comment on column e_xsejtfsjl.qd is '脐带';
-comment on column e_xsejtfsjl.xcsfrq is '下次随访日期';
-comment on column e_xsejtfsjl.xcsfdd is '下次随访地点';
-comment on column e_xsejtfsjl.zcjy is '转诊建议';
-comment on column e_xsejtfsjl.zcyy is '转诊原因';
-comment on column e_xsejtfsjl.zd is '指导';
-comment on column e_xsejtfsjl.zcjgks is '转诊机构科室';
-comment on column e_xsejtfsjl.xgrid is '修改人id';
-comment on column e_xsejtfsjl.xgrxm is '修改人姓名';
-comment on column e_xsejtfsjl.xgsj is '修改时间';
-comment on column e_xsejtfsjl.cjrid is '创建人id';
-comment on column e_xsejtfsjl.cjrxm is '创建人姓名';
-comment on column e_xsejtfsjl.cjsj is '创建时间';
+comment on table e_xsejksf_1_8 is '1-8月儿童体检';
+comment on column e_xsejksf_1_8.id is 'id';
+comment on column e_xsejksf_1_8.gljgid is '管理机构id';
+comment on column e_xsejksf_1_8.xseid is '新生儿id';
+comment on column e_xsejksf_1_8.xm is '姓名';
+comment on column e_xsejksf_1_8.sfrq is '随访日期';
+comment on column e_xsejksf_1_8.tz is '体重';
+comment on column e_xsejksf_1_8.tzpj is '体重评价';
+comment on column e_xsejksf_1_8.sc is '身长';
+comment on column e_xsejksf_1_8.scpj is '身长评价';
+comment on column e_xsejksf_1_8.sfjg is '随访结果';
+comment on column e_xsejksf_1_8.sfyy is '失访原因';
+comment on column e_xsejksf_1_8.swrq is '死亡日期';
+comment on column e_xsejksf_1_8.tw is '头围';
+comment on column e_xsejksf_1_8.fywssd is '服用维生素D';
+comment on column e_xsejksf_1_8.hwhd is '户外活动';
+comment on column e_xsejksf_1_8.ms is '面色';
+comment on column e_xsejksf_1_8.pf is '皮肤';
+comment on column e_xsejksf_1_8.qx is '前囟';
+comment on column e_xsejksf_1_8.yj is '眼睛';
+comment on column e_xsejksf_1_8.ewg is '耳外观';
+comment on column e_xsejksf_1_8.kq is '口腔';
+comment on column e_xsejksf_1_8.xb is '胸部';
+comment on column e_xsejksf_1_8.fb is '腹部';
+comment on column e_xsejksf_1_8.qb is '脐部';
+comment on column e_xsejksf_1_8.sz is '四肢';
+comment on column e_xsejksf_1_8.wszq is '肛门/外生殖器';
+comment on column e_xsejksf_1_8.jbbk is '颈部包块';
+comment on column e_xsejksf_1_8.lcsfjhbqk is '患病情况';
+comment on column e_xsejksf_1_8.zd is '指导';
+comment on column e_xsejksf_1_8.xcsfrq is '下次随访日期';
+comment on column e_xsejksf_1_8.sfysid is '随访医生';
+comment on column e_xsejksf_1_8.zcjy is '转诊建议';
+comment on column e_xsejksf_1_8.zcyy is '转诊原因';
+comment on column e_xsejksf_1_8.zcjgks is '转诊机构科室';
+comment on column e_xsejksf_1_8.xgrid is '修改人id';
+comment on column e_xsejksf_1_8.xgrxm is '修改人姓名';
+comment on column e_xsejksf_1_8.xgsj is '修改时间';
+comment on column e_xsejksf_1_8.cjrid is '创建人id';
+comment on column e_xsejksf_1_8.cjrxm is '创建人姓名';
+comment on column e_xsejksf_1_8.cjsj is '创建时间';

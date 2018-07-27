@@ -210,45 +210,36 @@
         createStoredProcedure:function(){
           readFile(dataFile).then((data)=>{
             data = JSON.parse(data);
-            var now = new Date();
-            var str=`CREATE OR REPLACE PROCEDURE ${data.name} ( data_in    IN CLOB,result_out OUT VARCHAR2) IS\n\t/*`;
-            str += setNote()+'\n\t';
-            str += `过程名   : ${data.name}\n\t作者     : ${data.author}\n\t功能     : ${data.title}\n\t创建日期 : ${sd.format(now,'YYYY-MM-DD')}\n\t修改日期 :\n\t版本号   : ${data.bbh||'v1.0.1'}\n\t参数     : data_in格式\n\t\t`;
-            var obj = {}
+            let table = data.name;
+            var str=``;
             for(let item of data.col){
-              obj = Object.assign(obj,item.col);
+                str += `v_${item.name} ${table}.${item.name}%type; --${item.title}\n\t`;
             }
-            var dataJson = JSON.stringify(obj);
-            dataJson = dataJson.replace(/:["']+[^'"]+['"']+/g,'');
-            var position = getPosition(dataJson,',');
-            var i=1;
-            for(let pos of position){
-              if(pos>76*i){
-                i++;
-                dataJson = dataJson.substring(0,pos) + '\n\t\t' + dataJson.substring(pos,dataJson.length);
+            str += '\n\n\n\n\t';
+            for(let item of data.col){
+              if(item.type=='date'){
+                str += `v_${item.name}:= json_date(v_json_data, '${item.name}'); --${item.title}\n\t`;
+              }else{
+                str += `v_${item.name}:= json_str(v_json_data, '${item.name}'); --${item.title}\n\t`;
               }
             }
-            str += dataJson;
-            str += `\n\t返回值格式\n\t${setNote()}*/\n\tv_json_data      json;\n\t`;
+            writeFile(complete,str).then(()=>{
+              console.info('write in file successful');
+            }).catch((data)=>{
+              console.error(data);
+            });
+          }).catch((data)=>{
+            console.error(data);
+          });
+        },
+        alertSql:function(){
+          readFile(dataFile).then((data)=>{
+            data = JSON.parse(data);
+            let table = data.name;
+            var str=``;
             for(let item of data.col){
-              let name = item.name;
-              let cols = item.col;
-              for(let key in cols){
-                str += `v_${key} ${name}.${key}%type; --${cols[key]}\n\t`;
-              }
+                str += `alter table ${table} modify(${item.name} ${item.type});\n`;
             }
-            str += `err_custom EXCEPTION;\n\tv_err VARCHAR2(2000);\n\tv_fs Varchar2(1);\n\tv_count Integer:=0;\n\tv_json_return json:=json();\nBEGIN\n\tjson_data(data_in, '${data.title}', v_json_data);\n\t`;
-            for(let item of data.col){
-              let cols = item.col;
-              for(let key in cols){
-                if(/(时间|日期)$/.test(cols[key])){
-                  str += `v_${key}:= json_date(v_json_data, '${key}'); --${cols[key]}\n\t`;
-                }else{
-                  str += `v_${key}:= json_str(v_json_data, '${key}'); --${cols[key]}\n\t`;
-                }
-              }
-            }
-            str+=`--主体执行功能部分\n\t\n\tv_Json_Return.Put('id', v_id);\n\tResult_Out := Return_Succ_Json(v_Json_Return);\nEXCEPTION\n\tWHEN err_custom THEN\n\t\tresult_out := return_fail(v_err, 2);\n\tWHEN OTHERS THEN\n\t\tv_err := SQLERRM;\n\t\tresult_out := return_fail(v_err, 0);\nEND;\n`;
             writeFile(complete,str).then(()=>{
               console.info('write in file successful');
             }).catch((data)=>{

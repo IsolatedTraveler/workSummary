@@ -30,7 +30,7 @@
 	</div>
 </div>
 多选
-<div class="{{d.class1||g.class1}}">
+<div class="{{d.class1||g.multiClass1}}">
 	{{# if(d.title) { }}
 	<label class="{{d.labelClass||g.labelClass}}">{{d.title}}</label>
 	{{# } }}
@@ -66,7 +66,7 @@ bigText
 	</div>
 </div>
 组合
-<div class="layui-inline my-col12 my-col">
+<div class="my-col12 my-col">
 	<label class="layui-form-label" style="height: {{d.num*30-5}}px;line-height: {{d.num*30-7}}px;">{{d.title}}</label>
 	<div class="layui-input-inline my-col-auto myGrid" >
 		{{!# d.form.global=Object.assign({},g,d.form.global);str += analyses(d.form,content); #!}}

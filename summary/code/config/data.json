@@ -1,0 +1,36 @@
+{
+    "name":"e_ycfcqjc",
+    "title":"1-8月儿童体检",
+    "col":[
+        {
+            "type": "NUMBER(6,2)",
+            "name": "zrlc",
+            "title": "自然流产"
+        },
+        {
+            "type": "NUMBER(6,2)",
+            "name": "rglc",
+            "title": "人工流产"
+        },
+        {
+            "type": "NUMBER(6,2)",
+            "name": "st",
+            "title": "死胎"
+        },
+        {
+            "type": "NUMBER(6,2)",
+            "name": "sc",
+            "title": "死产"
+        },
+        {
+            "type": "NUMBER(6,2)",
+            "name": "xsesw",
+            "title": "新生儿死亡"
+        },
+        {
+            "type": "NUMBER(6,2)",
+            "name": "csqxe",
+            "title": "出生缺陷儿"
+        }
+    ]
+}

@@ -1,8 +1,591 @@
 <div class="layui-inline my-col4 my-col">
-	<label class="layui-form-label">可以佝偻病体征</label>
+	<label class="layui-form-label">姓名</label>
 	<div class="layui-input-inline my-col-auto my-col" >
-		<select id="kyglbtz" name="kyglbtz" lay-search="" >
-			<option value=""></option>
+  	<input type="text" id="xm" name="xm" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">孕周</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="yz" name="yz" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">周</span>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">孕妇年龄</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="yfnl" name="yfnl" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">丈夫姓名</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="zfxm" name="zfxm" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">丈夫年龄</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="zfnl" name="zfnl" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">丈夫电话</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="zfdh" name="zfdh" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">孕次</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="yc" name="yc" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">次</span>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">产次</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="cc" name="cc" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">次</span>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">阴道分娩</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="ydfm" name="ydfm" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">次</span>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">剖宫产</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="pgc" name="pgc" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">次</span>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">末次月经</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="mcyj" name="mcyj" lay-search="" >
+			<option value="不详">不详</option>
+			<option value="日期">日期</option>
 		</select>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="mcyj_qt" name="mcyj_qt" autocomplete="off" class="layui-input my-col-auto" lay-verify="date|required" onclick="layui.laydate({elem: this})">
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">预产期</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="ycq" name="ycq" autocomplete="off" class="layui-input my-col-auto" lay-verify="date|required" onclick="layui.laydate({elem: this})">
+	</div>
+</div>
+<div class="layui-inline my-col8 my-col">
+	<label class="layui-form-label">既往史</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input  class="layui-input multiple_input_position"/>
+		<select id="jws" name="jws" class="chosen-select width-size3 jzs_chosen" multiple render="false">
+			<option value="1-无">1-无</option>
+			<option value="2-心脏病">2-心脏病</option>
+			<option value="3-肾脏疾病">3-肾脏疾病</option>
+			<option value="4-肝脏疾病">4-肝脏疾病</option>
+			<option value="5-高血压">5-高血压</option>
+			<option value="6-贫血">6-贫血</option>
+			<option value="7-糖尿病">7-糖尿病</option>
+			<option value="8-其他">8-其他</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col8 my-col">
+	<label class="layui-form-label">家族史</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input  class="layui-input multiple_input_position"/>
+		<select id="gzs" name="gzs" class="chosen-select width-size3 jzs_chosen" multiple render="false">
+			<option value="1-无">1-无</option>
+			<option value="2-心脏病">2-心脏病</option>
+			<option value="3-肾脏疾病">3-肾脏疾病</option>
+			<option value="4-肝脏疾病">4-肝脏疾病</option>
+			<option value="5-高血压">5-高血压</option>
+			<option value="6-贫血">6-贫血</option>
+			<option value="7-糖尿病">7-糖尿病</option>
+			<option value="8-其他">8-其他</option>
+			<option value="1-无">1-无</option>
+			<option value="2-遗传性疾病史">2-遗传性疾病史</option>
+			<option value="3-精神疾病史">3-精神疾病史</option>
+			<option value="4-其他">4-其他</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col8 my-col">
+	<label class="layui-form-label">个人史</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input  class="layui-input multiple_input_position"/>
+		<select id="grs" name="grs" class="chosen-select width-size3 jzs_chosen" multiple render="false">
+			<option value="1-无特殊">1-无特殊</option>
+			<option value="2-吸烟">2-吸烟</option>
+			<option value="3-饮酒">3-饮酒</option>
+			<option value="4-服用药物">4-服用药物</option>
+			<option value="5-接触有毒有害物质">5-接触有毒有害物质</option>
+			<option value="6-接触放射线">6-接触放射线</option>
+			<option value="7-其他">7-其他</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">妇产科手术史</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="fcksss" name="fcksss" lay-search="" >
+			<option value="1-无">1-无</option>
+			<option value="2-有">2-有</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="fcksss_qt" name="fcksss_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col8 my-col">
+	<label class="layui-form-label">孕产史</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input  class="layui-input multiple_input_position"/>
+		<select id="ycs" name="ycs" class="chosen-select width-size3 jzs_chosen" multiple render="false">
+			<option value="1-自然流产">1-自然流产</option>
+			<option value="2-人工流产">2-人工流产</option>
+			<option value="3-死胎">3-死胎</option>
+			<option value="4-死产">4-死产</option>
+			<option value="5-新生儿死亡">5-新生儿死亡</option>
+			<option value="6-出生缺陷儿">6-出生缺陷儿</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="ycs_qt" name="ycs_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">身高</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="sg" name="sg" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">cm</span>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">体重</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="tc" name="tc" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">kg</span>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">体质指数</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="tzzs" name="tzzs" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">kg/m2</span>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">血压</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="xy" name="xy" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">mmHg</span>
+	</div>
+</div>
+<div class="my-col12 my-col">
+	<label class="layui-form-label" style="height: NaNpx;line-height: NaNpx;">听诊</label>
+	<div class="layui-input-inline my-col-auto myGrid" ><div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">心脏</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="xz" name="xz" lay-search="" >
+			<option value=""></option>
+			<option value="1-未见异常">1-未见异常</option>
+			<option value="2-异常">2-异常</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="xz_qt" name="xz_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">肺部</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="fb" name="fb" lay-search="" >
+			<option value=""></option>
+			<option value="1-未见异常">1-未见异常</option>
+			<option value="2-异常">2-异常</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="fb_qt" name="fb_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+
+	</div>
+</div>
+<div class="my-col12 my-col">
+	<label class="layui-form-label" style="height: NaNpx;line-height: NaNpx;">妇科检查</label>
+	<div class="layui-input-inline my-col-auto myGrid" ><div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">外阴</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="wy" name="wy" lay-search="" >
+			<option value=""></option>
+			<option value="1-未见异常">1-未见异常</option>
+			<option value="2-异常">2-异常</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="wy_qt" name="wy_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">阴道</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="yd" name="yd" lay-search="" >
+			<option value=""></option>
+			<option value="1-未见异常">1-未见异常</option>
+			<option value="2-异常">2-异常</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="yd_qt" name="yd_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">宫颈</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="gg" name="gg" lay-search="" >
+			<option value=""></option>
+			<option value="1-未见异常">1-未见异常</option>
+			<option value="2-异常">2-异常</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="gg_qt" name="gg_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">子宫</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="zg" name="zg" lay-search="" >
+			<option value=""></option>
+			<option value="1-未见异常">1-未见异常</option>
+			<option value="2-异常">2-异常</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="zg_qt" name="zg_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">附件</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="fj" name="fj" lay-search="" >
+			<option value=""></option>
+			<option value="1-未见异常">1-未见异常</option>
+			<option value="2-异常">2-异常</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="fj_qt" name="fj_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+
+	</div>
+</div>
+<div class="my-col12 my-col">
+	<label class="layui-form-label" style="height: NaNpx;line-height: NaNpx;">辅助检查</label>
+	<div class="layui-input-inline my-col-auto myGrid" ><div class="my-col12 my-col">
+	<label class="layui-form-label" style="height: NaNpx;line-height: NaNpx;">血常规</label>
+	<div class="layui-input-inline my-col-auto myGrid" ><div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">血红带白</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="xgdb" name="xgdb" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">g/L</span>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">白细胞计数</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="bxbjs" name="bxbjs" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">g/L</span>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">血小板计数</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="xxbjs" name="xxbjs" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">g/L</span>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">其他</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="qt" name="qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+
+	</div>
+</div>
+<div class="my-col12 my-col">
+	<label class="layui-form-label" style="height: NaNpx;line-height: NaNpx;">尿常规</label>
+	<div class="layui-input-inline my-col-auto myGrid" ><div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">尿蛋白</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="ndb" name="ndb" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">尿糖</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="nt" name="nt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">尿酮体</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="ntt" name="ntt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">尿潜血</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="nqx" name="nqx" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">其他</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="qt" name="qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">血型</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="xx" name="xx" lay-search="" >
+			<option value="ABO">ABO</option>
+			<option value="RH*">RH*</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="xx_qt" name="xx_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">血糖</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="xt" name="xt" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">mmol/L</span>
+	</div>
+</div>
+<div class="my-col12 my-col">
+	<label class="layui-form-label" style="height: NaNpx;line-height: NaNpx;">肝功能</label>
+	<div class="layui-input-inline my-col-auto myGrid" ><div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">血清谷丙转氨酶</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="xqgbzam" name="xqgbzam" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">U/L</span>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">血清谷草转氨酶</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="xqgczam" name="xqgczam" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">U/L</span>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">白蛋白</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="bdb" name="bdb" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">g/L</span>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">总胆红素</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="zdgs" name="zdgs" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">μmol/L</span>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">结合胆红素</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="jgdgs" name="jgdgs" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">μmol/L</span>
+	</div>
+</div>
+
+	</div>
+</div>
+<div class="my-col12 my-col">
+	<label class="layui-form-label" style="height: NaNpx;line-height: NaNpx;">肾功能</label>
+	<div class="layui-input-inline my-col-auto myGrid" ><div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">血清肌酐</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="xqjg" name="xqjg" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">μmol/L</span>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">血尿素</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input type="text" id="xns" name="xns" autocomplete="off" class='layui-input my-col-auto'>
+		<span style="display: inline-block;height: 23px;width: 57px;line-height: 23px;border: 1px solid #e6e6e6;">mmol/L</span>
+	</div>
+</div>
+
+	</div>
+</div>
+<div class="layui-inline my-col8 my-col">
+	<label class="layui-form-label">阴道分泌物</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input  class="layui-input multiple_input_position"/>
+		<select id="ydfmw" name="ydfmw" class="chosen-select width-size3 jzs_chosen" multiple render="false">
+			<option value="1-未见异常">1-未见异常</option>
+			<option value="2-滴虫">2-滴虫</option>
+			<option value="3-假丝酵母菌">3-假丝酵母菌</option>
+			<option value="4-其他">4-其他</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="ydfmw_qt" name="ydfmw_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">阴道清洁度</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="ydqjd" name="ydqjd" lay-search="" >
+			<option value="1-Ⅰ度">1-Ⅰ度</option>
+			<option value="2-Ⅱ度">2-Ⅱ度</option>
+			<option value="3-Ⅲ度">3-Ⅲ度</option>
+			<option value="4-Ⅳ度">4-Ⅳ度</option>
+		</select>
+	</div>
+</div>
+<div class="my-col12 my-col">
+	<label class="layui-form-label" style="height: NaNpx;line-height: NaNpx;">乙型肝炎</label>
+	<div class="layui-input-inline my-col-auto myGrid" ><div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">表面抗原</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="bmky" name="bmky" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">表面抗体</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="bmkt" name="bmkt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">e 抗原</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="e ky" name="e ky" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">e 抗体</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="e kt" name="e kt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">核心抗体</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="hxkt" name="hxkt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">梅毒血清试验</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="mdxqsy" name="mdxqsy" lay-search="" >
+			<option value="1-阴性">1-阴性</option>
+			<option value="2-阳性">2-阳性</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">HIV抗体</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="hivkt" name="hivkt" lay-search="" >
+			<option value="1-阴性">1-阴性</option>
+			<option value="2-阳性">2-阳性</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">B超</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="bc" name="bc" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col6 my-col">
+	<label class="layui-form-label">其他</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="qt" name="qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<label class="layui-form-label">总体评估</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<select id="ztpg" name="ztpg" lay-search="" >
+			<option value=""></option>
+			<option value="1-未见异常">1-未见异常</option>
+			<option value="2-异常">2-异常</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="ztpg_qt" name="ztpg_qt" autocomplete="off" class='layui-input my-col-auto'>
+	</div>
+</div>
+<div class="layui-inline my-col8 my-col">
+	<label class="layui-form-label">保健指导</label>
+	<div class="layui-input-inline my-col-auto my-col" >
+		<input  class="layui-input multiple_input_position"/>
+		<select id="bjzd" name="bjzd" class="chosen-select width-size3 jzs_chosen" multiple render="false">
+			<option value="1-生活方式">1-生活方式</option>
+			<option value="2-心理">2-心理</option>
+			<option value="3-营养">3-营养</option>
+			<option value="4-避免致畸因素和疾病对胚胎的不良影响">4-避免致畸因素和疾病对胚胎的不良影响</option>
+			<option value="5-产前筛查宣传告知">5-产前筛查宣传告知</option>
+			<option value="6-其他">6-其他</option>
+		</select>
+	</div>
+</div>
+<div class="layui-inline my-col4 my-col">
+	<div class="layui-input-inline my-col-auto my-col" >
+  	<input type="text" id="bjzd_qt" name="bjzd_qt" autocomplete="off" class='layui-input my-col-auto'>
 	</div>
 </div>

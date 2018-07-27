@@ -1,8 +1,17 @@
-<div class="layui-inline my-col4 my-col">
-	<label class="layui-form-label">可以佝偻病体征</label>
-	<div class="layui-input-inline my-col-auto my-col" >
-		<select id="kyglbtz" name="kyglbtz" lay-search="" >
-			<option value=""></option>
-		</select>
-	</div>
-</div>
+v_zrlc e_ycfcqjc.zrlc%type; --自然流产
+	v_rglc e_ycfcqjc.rglc%type; --人工流产
+	v_st e_ycfcqjc.st%type; --死胎
+	v_sc e_ycfcqjc.sc%type; --死产
+	v_xsesw e_ycfcqjc.xsesw%type; --新生儿死亡
+	v_csqxe e_ycfcqjc.csqxe%type; --出生缺陷儿
+	
+
+
+
+	v_zrlc:= json_str(v_json_data, 'zrlc'); --自然流产
+	v_rglc:= json_str(v_json_data, 'rglc'); --人工流产
+	v_st:= json_str(v_json_data, 'st'); --死胎
+	v_sc:= json_str(v_json_data, 'sc'); --死产
+	v_xsesw:= json_str(v_json_data, 'xsesw'); --新生儿死亡
+	v_csqxe:= json_str(v_json_data, 'csqxe'); --出生缺陷儿
+	

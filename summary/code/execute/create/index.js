@@ -229,7 +229,7 @@
             })
           })
         },
-        setConfig:function(){
+        setConfig:function(){console.log(111)
           isFile(`summary/code/execute/create/config`,deleteFile).then(function(){
             copyFiles(`summary/code/execute/create/config`,`summary/code/config`).then(function(){
               console.info('copy the file successfully');

@@ -26,7 +26,7 @@
 	<label class="{{d.labelClass||g.labelClass}}">{{d.title}}</label>
 	{{# } }}
 	<div class="{{d.class2||g.class2}}" >
-		<input type="text" id="{{d.name}}" name="{{d.name}}" autocomplete="off" class="{{d.inputClass||g.inputClass}}" lay-verify="date|required" onclick="layui.laydate({elem: this})">
+		<input type="text" id="{{d.name}}" name="{{d.name}}" autocomplete="off" class="validate_wd_date {{d.inputClass||g.inputClass}}" lay-verify="date|required" onclick="layui.laydate({elem: this})">
 	</div>
 </div>
 多选

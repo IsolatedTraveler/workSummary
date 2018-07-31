@@ -1,36 +1,101 @@
 {
-    "name":"e_ycfcqjc",
+    "name":"e_xsejksf_1_8",
     "title":"1-8月儿童体检",
     "col":[
         {
-            "type": "NUMBER(6,2)",
-            "name": "zrlc",
-            "title": "自然流产"
+            "name": "id",
+            "type": "VARCHAR(50)",
+            "title": "ID"
+        },
+        {
+            "name": "zxid",
+            "type": "VARCHAR(50)",
+            "title": "专项ID"
+        },
+        {
+            "type": "varChar(32)",
+            "name": "xm",
+            "title": "姓名"
+        },
+        {
+            "type": "date",
+            "name": "sfrq",
+            "title": "随访日期"
+        },
+        {
+            "type": "date",
+            "name": "fmrq",
+            "title": "分娩日期"
+        },
+        {
+            "type": "date",
+            "name": "cyrq",
+            "title": "出院日期"
         },
         {
             "type": "NUMBER(6,2)",
-            "name": "rglc",
-            "title": "人工流产"
+            "name": "tw",
+            "title": "体温"
+        },
+        {
+            "type": "varChar(32)",
+            "name": "ybjkqk",
+            "title": "一般健康情况"
+        },
+        {
+            "type": "varChar(32)",
+            "name": "ybxlzk",
+            "title": "一般心理状况"
         },
         {
             "type": "NUMBER(6,2)",
-            "name": "st",
-            "title": "死胎"
+            "name": "xy",
+            "title": "血压"
         },
         {
-            "type": "NUMBER(6,2)",
-            "name": "sc",
-            "title": "死产"
+            "type": "varChar(128)",
+            "name": "rf",
+            "title": "乳房"
         },
         {
-            "type": "NUMBER(6,2)",
-            "name": "xsesw",
-            "title": "新生儿死亡"
+            "type": "varChar(128)",
+            "name": "el",
+            "title": "恶露"
         },
         {
-            "type": "NUMBER(6,2)",
-            "name": "csqxe",
-            "title": "出生缺陷儿"
+            "type": "varChar(128)",
+            "name": "zg",
+            "title": "子宫"
+        },
+        {
+            "type": "varChar(128)",
+            "name": "sk",
+            "title": "伤口"
+        },
+        {
+            "type": "varChar(32)",
+            "name": "cols_qt",
+            "title": "辅助检查_其他"
+        },
+        {
+            "type": "varChar(128)",
+            "name": "fl",
+            "title": "分类"
+        },
+        {
+            "type": "varChar(256)",
+            "name": "zd",
+            "title": "指导"
+        },
+        {
+            "name": "zt",
+            "type": "NUMBER(1)",
+            "title": "状态"
+        },
+        {
+            "name": "xgrid",
+            "title": "修改人id",
+            "type": "VARCHAR(50)"
         }
     ]
 }

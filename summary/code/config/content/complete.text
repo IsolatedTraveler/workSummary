@@ -1,43 +1,19 @@
-v_id E_YCFCHFS.id%type; --ID
-	v_zxid E_YCFCHFS.zxid%type; --专项ID
-	v_xm E_YCFCHFS.xm%type; --姓名
-	v_sfrq E_YCFCHFS.sfrq%type; --随访日期
-	v_fmrq E_YCFCHFS.fmrq%type; --分娩日期
-	v_cyrq E_YCFCHFS.cyrq%type; --出院日期
-	v_tw E_YCFCHFS.tw%type; --体温
-	v_ybjkqk E_YCFCHFS.ybjkqk%type; --一般健康情况
-	v_ybxlzk E_YCFCHFS.ybxlzk%type; --一般心理状况
-	v_xy E_YCFCHFS.xy%type; --血压
-	v_rf E_YCFCHFS.rf%type; --乳房
-	v_el E_YCFCHFS.el%type; --恶露
-	v_zg E_YCFCHFS.zg%type; --子宫
-	v_sk E_YCFCHFS.sk%type; --伤口
-	v_cols_qt E_YCFCHFS.cols_qt%type; --辅助检查_其他
-	v_fl E_YCFCHFS.fl%type; --分类
-	v_zd E_YCFCHFS.zd%type; --指导
-	v_zt E_YCFCHFS.zt%type; --状态
-	v_xgrid E_YCFCHFS.xgrid%type; --修改人id
+v_xcdd E_WSJDXGXC.xcdd%type; --巡查地点
+	v_xcrq E_WSJDXGXC.xcrq%type; --巡查日期
+	v_xcrid E_WSJDXGXC.xcrid%type; --巡查人id
+	v_xcrxm E_WSJDXGXC.xcrxm%type; --巡查人姓名
+	v_zywt E_WSJDXGXC.zywt%type; --主要问题
+	v_nr E_WSJDXGXC.nr%type; --内容
+	v_bz E_WSJDXGXC.bz%type; --备注
 	
 
 
 
-	v_id:= json_str(v_json_data, 'id'); --ID
-	v_zxid:= json_str(v_json_data, 'zxid'); --专项ID
-	v_xm:= json_str(v_json_data, 'xm'); --姓名
-	v_sfrq:= json_date(v_json_data, 'sfrq'); --随访日期
-	v_fmrq:= json_date(v_json_data, 'fmrq'); --分娩日期
-	v_cyrq:= json_date(v_json_data, 'cyrq'); --出院日期
-	v_tw:= json_str(v_json_data, 'tw'); --体温
-	v_ybjkqk:= json_str(v_json_data, 'ybjkqk'); --一般健康情况
-	v_ybxlzk:= json_str(v_json_data, 'ybxlzk'); --一般心理状况
-	v_xy:= json_str(v_json_data, 'xy'); --血压
-	v_rf:= json_str(v_json_data, 'rf'); --乳房
-	v_el:= json_str(v_json_data, 'el'); --恶露
-	v_zg:= json_str(v_json_data, 'zg'); --子宫
-	v_sk:= json_str(v_json_data, 'sk'); --伤口
-	v_cols_qt:= json_str(v_json_data, 'cols_qt'); --辅助检查_其他
-	v_fl:= json_str(v_json_data, 'fl'); --分类
-	v_zd:= json_str(v_json_data, 'zd'); --指导
-	v_zt:= json_str(v_json_data, 'zt'); --状态
-	v_xgrid:= json_str(v_json_data, 'xgrid'); --修改人id
+	v_xcdd:= json_str(v_json_data, 'xcdd'); --巡查地点
+	v_xcrq:= json_date(v_json_data, 'xcrq'); --巡查日期
+	v_xcrid:= json_str(v_json_data, 'xcrid'); --巡查人id
+	v_xcrxm:= json_str(v_json_data, 'xcrxm'); --巡查人姓名
+	v_zywt:= json_str(v_json_data, 'zywt'); --主要问题
+	v_nr:= json_str(v_json_data, 'nr'); --内容
+	v_bz:= json_str(v_json_data, 'bz'); --备注
 	

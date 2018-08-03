@@ -1,101 +1,41 @@
 {
-    "name":"e_xsejksf_1_8",
-    "title":"1-8月儿童体检",
+    "name":"E_WSJDXGXC",
+    "title":"卫生监督协管巡查报告",
     "col":[
         {
-            "name": "id",
-            "type": "VARCHAR(50)",
-            "title": "ID"
-        },
-        {
-            "name": "zxid",
-            "type": "VARCHAR(50)",
-            "title": "专项ID"
-        },
-        {
-            "type": "varChar(32)",
-            "name": "xm",
-            "title": "姓名"
+            "type": "varChar(128)",
+            "name": "xcdd",
+            "title": "巡查地点"
         },
         {
             "type": "date",
-            "name": "sfrq",
-            "title": "随访日期"
+            "name": "xcrq",
+            "title": "巡查日期"
         },
         {
-            "type": "date",
-            "name": "fmrq",
-            "title": "分娩日期"
+            "type": "varChar(30)",
+            "name": "xcrid",
+            "title": "巡查人id"
         },
         {
-            "type": "date",
-            "name": "cyrq",
-            "title": "出院日期"
+            "type": "varChar(20)",
+            "name": "xcrxm",
+            "title": "巡查人姓名"
         },
         {
-            "type": "NUMBER(6,2)",
-            "name": "tw",
-            "title": "体温"
+            "type": "varChar(500)",
+            "name": "zywt",
+            "title": "主要问题"
         },
         {
-            "type": "varChar(32)",
-            "name": "ybjkqk",
-            "title": "一般健康情况"
+            "type": "varChar(500)",
+            "name": "nr",
+            "title": "内容"
         },
         {
-            "type": "varChar(32)",
-            "name": "ybxlzk",
-            "title": "一般心理状况"
-        },
-        {
-            "type": "NUMBER(6,2)",
-            "name": "xy",
-            "title": "血压"
-        },
-        {
-            "type": "varChar(128)",
-            "name": "rf",
-            "title": "乳房"
-        },
-        {
-            "type": "varChar(128)",
-            "name": "el",
-            "title": "恶露"
-        },
-        {
-            "type": "varChar(128)",
-            "name": "zg",
-            "title": "子宫"
-        },
-        {
-            "type": "varChar(128)",
-            "name": "sk",
-            "title": "伤口"
-        },
-        {
-            "type": "varChar(32)",
-            "name": "cols_qt",
-            "title": "辅助检查_其他"
-        },
-        {
-            "type": "varChar(128)",
-            "name": "fl",
-            "title": "分类"
-        },
-        {
-            "type": "varChar(256)",
-            "name": "zd",
-            "title": "指导"
-        },
-        {
-            "name": "zt",
-            "type": "NUMBER(1)",
-            "title": "状态"
-        },
-        {
-            "name": "xgrid",
-            "title": "修改人id",
-            "type": "VARCHAR(50)"
+            "type": "varChar(500)",
+            "name": "bz",
+            "title": "备注"
         }
     ]
 }

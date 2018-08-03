@@ -1,84 +1,17 @@
-drop table e_xsejksf_1_8;
-create table e_xsejksf_1_8 (
-	id VARCHAR(32) ,
-	gljgid VARCHAR(32) ,
-	xseid VARCHAR(32) ,
-	xm VARCHAR(32) ,
-	sfrq date ,
-	tz VARCHAR(32) ,
-	tzpj VARCHAR(32) ,
-	sc VARCHAR(32) ,
-	scpj VARCHAR(32) ,
-	sfjg VARCHAR(32) ,
-	sfyy VARCHAR(32) ,
-	swrq date ,
-	tw VARCHAR(32) ,
-	fywssd VARCHAR(32) ,
-	hwhd VARCHAR(32) ,
-	ms VARCHAR(32) ,
-	pf VARCHAR(32) ,
-	qx VARCHAR(32) ,
-	yj VARCHAR(32) ,
-	ewg VARCHAR(32) ,
-	kq VARCHAR(32) ,
-	xb VARCHAR(32) ,
-	fb VARCHAR(32) ,
-	qb VARCHAR(32) ,
-	sz VARCHAR(32) ,
-	wszq VARCHAR(32) ,
-	jbbk VARCHAR(32) ,
-	lcsfjhbqk VARCHAR(32) ,
-	zd VARCHAR(128) ,
-	xcsfrq date ,
-	sfysid VARCHAR(32) ,
-	zcjy VARCHAR(128) ,
-	zcyy VARCHAR(500) ,
-	zcjgks VARCHAR(128) ,
-	xgrid VARCHAR(50) ,
-	xgrxm VARCHAR(20) ,
-	xgsj date ,
-	cjrid VARCHAR(50) ,
-	cjrxm VARCHAR(20) ,
-	cjsj date 
-);
-comment on table e_xsejksf_1_8 is '1-8月儿童体检';
-comment on column e_xsejksf_1_8.id is 'id';
-comment on column e_xsejksf_1_8.gljgid is '管理机构id';
-comment on column e_xsejksf_1_8.xseid is '新生儿id';
-comment on column e_xsejksf_1_8.xm is '姓名';
-comment on column e_xsejksf_1_8.sfrq is '随访日期';
-comment on column e_xsejksf_1_8.tz is '体重';
-comment on column e_xsejksf_1_8.tzpj is '体重评价';
-comment on column e_xsejksf_1_8.sc is '身长';
-comment on column e_xsejksf_1_8.scpj is '身长评价';
-comment on column e_xsejksf_1_8.sfjg is '随访结果';
-comment on column e_xsejksf_1_8.sfyy is '失访原因';
-comment on column e_xsejksf_1_8.swrq is '死亡日期';
-comment on column e_xsejksf_1_8.tw is '头围';
-comment on column e_xsejksf_1_8.fywssd is '服用维生素D';
-comment on column e_xsejksf_1_8.hwhd is '户外活动';
-comment on column e_xsejksf_1_8.ms is '面色';
-comment on column e_xsejksf_1_8.pf is '皮肤';
-comment on column e_xsejksf_1_8.qx is '前囟';
-comment on column e_xsejksf_1_8.yj is '眼睛';
-comment on column e_xsejksf_1_8.ewg is '耳外观';
-comment on column e_xsejksf_1_8.kq is '口腔';
-comment on column e_xsejksf_1_8.xb is '胸部';
-comment on column e_xsejksf_1_8.fb is '腹部';
-comment on column e_xsejksf_1_8.qb is '脐部';
-comment on column e_xsejksf_1_8.sz is '四肢';
-comment on column e_xsejksf_1_8.wszq is '肛门/外生殖器';
-comment on column e_xsejksf_1_8.jbbk is '颈部包块';
-comment on column e_xsejksf_1_8.lcsfjhbqk is '患病情况';
-comment on column e_xsejksf_1_8.zd is '指导';
-comment on column e_xsejksf_1_8.xcsfrq is '下次随访日期';
-comment on column e_xsejksf_1_8.sfysid is '随访医生';
-comment on column e_xsejksf_1_8.zcjy is '转诊建议';
-comment on column e_xsejksf_1_8.zcyy is '转诊原因';
-comment on column e_xsejksf_1_8.zcjgks is '转诊机构科室';
-comment on column e_xsejksf_1_8.xgrid is '修改人id';
-comment on column e_xsejksf_1_8.xgrxm is '修改人姓名';
-comment on column e_xsejksf_1_8.xgsj is '修改时间';
-comment on column e_xsejksf_1_8.cjrid is '创建人id';
-comment on column e_xsejksf_1_8.cjrxm is '创建人姓名';
-comment on column e_xsejksf_1_8.cjsj is '创建时间';
+v_fxsj E_WSJDXGBG.fxsj%type; --发现时间
+	v_xxlb E_WSJDXGBG.xxlb%type; --信息类别
+	v_xxnr E_WSJDXGBG.xxnr%type; --信息内容
+	v_bgsj E_WSJDXGBG.bgsj%type; --报告时间
+	v_bgrid E_WSJDXGBG.bgrid%type; --报告人id
+	v_bgridxm E_WSJDXGBG.bgridxm%type; --报告人姓名
+	
+
+
+
+	v_fxsj:= json_date(v_json_data, 'fxsj'); --发现时间
+	v_xxlb:= json_str(v_json_data, 'xxlb'); --信息类别
+	v_xxnr:= json_str(v_json_data, 'xxnr'); --信息内容
+	v_bgsj:= json_date(v_json_data, 'bgsj'); --报告时间
+	v_bgrid:= json_str(v_json_data, 'bgrid'); --报告人id
+	v_bgridxm:= json_str(v_json_data, 'bgridxm'); --报告人姓名
+	

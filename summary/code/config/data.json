@@ -1,41 +1,61 @@
 {
-    "name":"E_WSJDXGXC",
-    "title":"卫生监督协管巡查报告",
+    "name":"E_WSJDXGBG",
+    "title":"1-8月儿童体检",
     "col":[
         {
-            "type": "varChar(128)",
-            "name": "xcdd",
-            "title": "巡查地点"
+            "type": "varChar(32)",
+            "name": "sfzh",
+            "title": "sfzh"
         },
         {
-            "type": "date",
-            "name": "xcrq",
-            "title": "巡查日期"
+            "type": "varChar(32)",
+            "name": "xm",
+            "title": "xm"
         },
         {
-            "type": "varChar(30)",
-            "name": "xcrid",
-            "title": "巡查人id"
+            "type": "varChar(32)",
+            "name": "xb",
+            "title": "xb"
         },
         {
-            "type": "varChar(20)",
-            "name": "xcrxm",
-            "title": "巡查人姓名"
+            "type": "varChar(32)",
+            "name": "zzbh",
+            "title": "zzbh"
         },
         {
-            "type": "varChar(500)",
-            "name": "zywt",
-            "title": "主要问题"
+            "type": "varChar(32)",
+            "name": "wgdm",
+            "title": "wgdm"
         },
         {
-            "type": "varChar(500)",
-            "name": "nr",
-            "title": "内容"
+            "type": "varChar(32)",
+            "name": "lrks",
+            "title": "lrks"
         },
         {
-            "type": "varChar(500)",
-            "name": "bz",
-            "title": "备注"
+            "type": "varChar(32)",
+            "name": "lrjs",
+            "title": "lrjs"
+        },
+        {
+            "type": "varChar(32)",
+            "name": "lrys",
+            "title": "lrys"
+        },
+        {
+            "type": "varChar(32)",
+            "name": "sfks",
+            "title": "sfks"
+        },
+        {
+            "type": "varChar(32)",
+            "name": "sfjs",
+            "title": "sfjs"
+        },
+        {
+            "type": "varChar(32)",
+            "name": "sfys",
+            "title": "sfys"
         }
     ]
 }

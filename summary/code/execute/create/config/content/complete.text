@@ -1,13 +1,57 @@
 <div class="layui-inline my-col4 my-col">
-	<label class="layui-form-label">发现时间</label>
+	<label class="layui-form-label">姓名</label>
 	<div class="layui-input-inline my-col-auto my-col" >
-		<input type="text" id="fxsj" name="fxsj" autocomplete="off" date class="layui-input my-col-auto" lay-verify="date|required" onclick="layui.laydate({elem: this})">
+  	<input type="text" id="xm" name="xm" autocomplete="off" class='layui-input my-col-auto'>
 	</div>
 </div>
+				<div class="layui-inline my-col12" style="width:calc(100% - 10px);margin-bottom: 5px;">
+					<label class="layui-form-label mycol" style="width: 100%;height: 30px">
+						<span class="bigTextTitle">主观资料</span>
+						<div class="my-col-auto my-col" style="justify-content: center">
+							<button class="layui-btn layui-btn-mini  layui-btn-normal" onclick="commonGgwsUtil.openCyyChoose('zgzl','');" style="width: 70px;margin-left: -55px;">常用语引入</button>
+						</div>
+					</label>
+					<div class="layui-input-inline" style="width: 100%">
+						<textarea id="zgzl" name="zgzl" class="layui-textarea" style="min-height: 70px;"></textarea>
+					</div>
+				</div>
+				<div class="layui-inline my-col12" style="width:calc(100% - 10px);margin-bottom: 5px;">
+					<label class="layui-form-label mycol" style="width: 100%;height: 30px">
+						<span class="bigTextTitle">客观资料</span>
+						<div class="my-col-auto my-col" style="justify-content: center">
+							<button class="layui-btn layui-btn-mini  layui-btn-normal" onclick="commonGgwsUtil.openCyyChoose('kgzl','');" style="width: 70px;margin-left: -55px;">常用语引入</button>
+						</div>
+					</label>
+					<div class="layui-input-inline" style="width: 100%">
+						<textarea id="kgzl" name="kgzl" class="layui-textarea" style="min-height: 70px;"></textarea>
+					</div>
+				</div>
+				<div class="layui-inline my-col12" style="width:calc(100% - 10px);margin-bottom: 5px;">
+					<label class="layui-form-label mycol" style="width: 100%;height: 30px">
+						<span class="bigTextTitle">评估</span>
+						<div class="my-col-auto my-col" style="justify-content: center">
+							<button class="layui-btn layui-btn-mini  layui-btn-normal" onclick="commonGgwsUtil.openCyyChoose('pg','');" style="width: 70px;margin-left: -55px;">常用语引入</button>
+						</div>
+					</label>
+					<div class="layui-input-inline" style="width: 100%">
+						<textarea id="pg" name="pg" class="layui-textarea" style="min-height: 70px;"></textarea>
+					</div>
+				</div>
+				<div class="layui-inline my-col12" style="width:calc(100% - 10px);margin-bottom: 5px;">
+					<label class="layui-form-label mycol" style="width: 100%;height: 30px">
+						<span class="bigTextTitle">处置计划</span>
+						<div class="my-col-auto my-col" style="justify-content: center">
+							<button class="layui-btn layui-btn-mini  layui-btn-normal" onclick="commonGgwsUtil.openCyyChoose('czjh','');" style="width: 70px;margin-left: -55px;">常用语引入</button>
+						</div>
+					</label>
+					<div class="layui-input-inline" style="width: 100%">
+						<textarea id="czjh" name="czjh" class="layui-textarea" style="min-height: 70px;"></textarea>
+					</div>
+				</div>
 <div class="layui-inline my-col4 my-col">
-	<label class="layui-form-label">信息类别</label>
+	<label class="layui-form-label">接诊医生</label>
 	<div class="layui-input-inline my-col-auto my-col" >
-		<select id="xxlb" name="xxlb" lay-search="" >
+		<select id="jzys" name="jzys" lay-search="" >
 			<option value=""></option>
 			<option value="1-未见异常">1-未见异常</option>
 			<option value="2-异常">2-异常</option>
@@ -15,18 +59,8 @@
 	</div>
 </div>
 <div class="layui-inline my-col4 my-col">
-	<label class="layui-form-label">报告时间</label>
+	<label class="layui-form-label"><span style="color:red">*</span>接诊日期</label>
 	<div class="layui-input-inline my-col-auto my-col" >
-		<input type="text" id="bgsj" name="bgsj" autocomplete="off" date class="layui-input my-col-auto" lay-verify="date|required" onclick="layui.laydate({elem: this})">
-	</div>
-</div>
-<div class="layui-inline my-col4 my-col">
-	<label class="layui-form-label">报告人</label>
-	<div class="layui-input-inline my-col-auto my-col" >
-		<select id="bgr" name="bgr" lay-search="" >
-			<option value=""></option>
-			<option value="1-未见异常">1-未见异常</option>
-			<option value="2-异常">2-异常</option>
-		</select>
+		<input type="text" id="jzrq" name="jzrq" autocomplete="off" date class="layui-input my-col-auto" lay-verify="date|required" onclick="layui.laydate({elem: this})">
 	</div>
 </div>

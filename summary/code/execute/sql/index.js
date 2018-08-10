@@ -183,6 +183,9 @@
         setC:function(){
           this.setConfig()
         },
+        cc:function(){
+          this.createCondition()
+        },
         //主体
         createTable:function(){
           readFile(dataFile).then((data)=>{
@@ -277,6 +280,23 @@
               name.push(key);
             }
             str += `${name.join(',')} from ${data.name}`;
+            writeFile(complete,str).then(()=>{
+              console.info('write in file successful');
+            }).catch((data)=>{
+              console.error(data);
+            });
+          }).catch((data)=>{
+            console.error(data);
+          });
+        },
+        createCondition:function(){
+          readFile(dataFile).then((data)=>{
+            data = JSON.parse(data);
+            var str=``;
+            var cols=data.col;
+            for(let col of cols){
+                str += `<if if(StringUtils.isNotBlank(#{${col.name}}))>\n\tand a.${col.name} = #{${col.name}}\n</if>\n`;
+            }    
             writeFile(complete,str).then(()=>{
               console.info('write in file successful');
             }).catch((data)=>{

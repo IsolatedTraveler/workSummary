@@ -9,6 +9,7 @@
         "multiInputClass":"layui-input multiple_input_position",
         "multiClass":"chosen-select width-size3 jzs_chosen",
         "multiClass1":"layui-inline my-col8 my-col",
+        "button":"常用语引入",
         "values":[
             {"value":""},
             {
@@ -22,25 +23,40 @@
         ]
     },
     "module": {
-        "fxsj": {
-            "title": "发现时间",
-            "type": "date",
-            "name": "fxsj"
+        "xm": {
+            "title": "姓名",
+            "type": "text",
+            "name": "xm"
         },
-        "xxlb": {
-            "title": "信息类别",
+        "zgzl": {
+            "title": "主观资料",
+            "type": "bigText",
+            "name": "zgzl"
+        },
+        "kgzl": {
+            "title": "客观资料",
+            "type": "bigText",
+            "name": "kgzl"
+        },
+        "pg": {
+            "title": "评估",
+            "type": "bigText",
+            "name": "pg"
+        },
+        "czjh": {
+            "title": "处置计划",
+            "type": "bigText",
+            "name": "czjh"
+        },
+        "jzys": {
+            "title": "接诊医生",
             "type": "select",
-            "name": "xxlb"
+            "name": "jzys"
         },
-        "bgsj": {
-            "title": "报告时间",
+        "jzrq": {
+            "title": "接诊日期",
             "type": "date",
-            "name": "bgsj"
-        },
-        "bgr": {
-            "title": "报告人",
-            "type": "select",
-            "name": "bgr"
+            "name": "jzrq"
         }
     }
 }

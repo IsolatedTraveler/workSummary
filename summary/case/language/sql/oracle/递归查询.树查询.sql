@@ -1,0 +1,1 @@
+select * from table  start with id = v_id connect by glid = prior id

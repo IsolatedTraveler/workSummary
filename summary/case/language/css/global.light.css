@@ -1,0 +1,16 @@
+.flex{
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: flex-start;
+ 	flex-wrap: wrap;
+ 	flex-direction: column;
+}
+.flex.nowrap{
+ 	flex-wrap: nowrap;
+}
+.flex.row{
+ 	flex-direction: row;
+}
+.flex>.auto{
+	flex:1;
+}

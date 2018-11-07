@@ -55,6 +55,20 @@
  	flex:1;
 }
 /**
+ * @target    文本超出部分省略显示
+ */
+.ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.ellipsis:hover{
+	position: absolute;
+	background: white;
+	overflow: visible;
+	text-overflow: normal;
+}
+/**
  * @target  设置显示层级
  * @desc    9   正文内容最高层级   99   遮罩层最高层级   999   弹出层最高层级
  */

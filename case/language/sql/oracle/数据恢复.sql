@@ -1,0 +1,1 @@
+select * from sqldy as of timestamp to_timestamp('2018-12-27 12:28:00','YYYY-MM-DD HH24:MI:SS') where mkbh = '021101';

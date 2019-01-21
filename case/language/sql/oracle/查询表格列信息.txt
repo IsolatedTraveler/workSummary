@@ -1,0 +1,5 @@
+select a.column_name, b.data_type, comments
+  from user_tab_columns b, user_col_comments a
+ where a.column_name = b.column_name
+   and a.table_name = b.table_name
+   and a.table_name=upper('O_SFJL')
